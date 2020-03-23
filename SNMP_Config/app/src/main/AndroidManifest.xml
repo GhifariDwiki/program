@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.snmp_config">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DeviceList_lvdConfig"></activity>
+        <activity android:name=".DeviceList_sensorconfig" />
+        <activity android:name=".DeviceList" />
+        <activity android:name=".main_menu" />
+        <activity
+            android:name=".Online_Monitoring"
+            android:label="fix">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main_menu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Online_Monitoring" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sensor_config_anak"
+            android:label="masukan data">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main_menu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Sensor_config_anak" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IP_Config"
+            android:label="masukan data">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main_menu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.IP_Config" />
+
+                <category android:name="android.intent.category.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

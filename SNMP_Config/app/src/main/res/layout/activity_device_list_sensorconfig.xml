@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill|fill_vertical"
+    android:background="#000000"
+    tools:context=".DeviceList_sensorconfig">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        android:background="#F5020202"
+        android:gravity="center_horizontal|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="38dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="380dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="PAIRED DEVICE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lv_PairedDevice3"
+            android:layout_width="304dp"
+            android:layout_height="440dp"
+            android:layout_marginLeft="30dp"
+            android:background="#FFFFFF"
+            android:cacheColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/but_hubungkan3"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Hubungkan perangkat" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

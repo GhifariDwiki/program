@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SNMP_Config</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="pilih_item">
+        <item>Tegangan1</item>
+        <item>Tegangan2</item>
+        <item>Tegangan3</item>
+        <item>Tegangan4</item>
+        <item>Tegangan5</item>
+        <item>Arus1</item>
+        <item>Arus2</item>
+        <item>Arus3</item>
+        <item>Arus4</item>
+    </string-array>
+</resources>
